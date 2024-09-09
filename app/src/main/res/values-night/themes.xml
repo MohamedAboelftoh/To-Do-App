@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDoApp1" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="screensBackGround">
+        <item name="android:background">@color/colorBackGroundDarkScreens</item>
+    </style>
+    <style name="item_view_backGround">
+        <item name="android:backgroundTint">@color/colorBlack2</item>
+    </style>
+    <style name="backGroundBtnNav" parent="@style/Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="android:backgroundTint">@color/colorBlack2</item>
+    </style>
+    <style name="selectedIconNavigation">
+        <item name="itemIconTint">@color/icon_selected_navigation_dark</item>
+        <item name="itemTextColor">@color/icon_selected_navigation_dark</item>
+    </style>
+    <style name="backGroundAddTask">
+        <item name="android:background">@color/colorBlack2</item>
+    </style>
+    <style name="textColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="textColor2">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="spinner_backGround">
+        <item name="android:background">@drawable/spinner_shape_dark</item>
+    </style>
+    <style name="tintIconBack">
+        <item name="tint">@color/black</item>
+    </style>
+</resources>
