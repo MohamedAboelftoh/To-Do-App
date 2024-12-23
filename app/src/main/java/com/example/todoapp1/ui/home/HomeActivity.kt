@@ -1,19 +1,19 @@
 package com.example.todoapp1.ui.home
 
-import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.todoapp1.R
 import com.example.todoapp1.databinding.ActivityHomeBinding
-import com.example.todoapp1.ui.home.fragments.AddTaskFragment
-import com.example.todoapp1.ui.home.fragments.ListFragment
-import com.example.todoapp1.ui.home.fragments.SettingFragment
-import com.google.android.material.snackbar.Snackbar
+import com.example.todoapp1.ui.home.fragments.button_sheet.AddTaskFragment
+import com.example.todoapp1.ui.home.fragments.tasks_list.ListFragment
+import com.example.todoapp1.ui.home.fragments.settings.SettingFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     private lateinit var viewBinding : ActivityHomeBinding
-     var listFragment: ListFragment ?= null
+     var listFragment: ListFragment?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityHomeBinding.inflate(layoutInflater)
@@ -53,6 +53,4 @@ class HomeActivity : AppCompatActivity() {
             .replace(R.id.container,fragment)
             .commit()
     }
-
-
 }

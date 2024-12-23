@@ -13,10 +13,11 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        this.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        this.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
+            finish()
         },2000)
     }
 }
